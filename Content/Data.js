@@ -813,7 +813,7 @@ var a=u[t.type]||t.type,n=l.getRelativePosition(t,e);return i(a,e,n.x,n.y,t)}fun
    return Doc.Element("div",[],[Doc.Element("span",[AttrProxy.Create("style","width: 15px; height: 15px;\n                                             margin-right: 10px;\n                                             display: inline-block;\n                                             background-color: "+Global.String(color))],[]),Doc.Element("span",[],[Doc.TextNode(c.Name)])]);
   }
   SC$1.data={
-   serviceUrl:"http://api.worldbank.org",
+   serviceUrl:"http://api.worldbank.org".replace(new Global.RegExp("http:"),"https:"),
    source:"World Development Indicators;Global Financial Development"
   };
   SC$1.countries=[WorldBankRuntime.GetCountry(Client.data(),"AUT","Austria"),WorldBankRuntime.GetCountry(Client.data(),"HUN","Hungary"),WorldBankRuntime.GetCountry(Client.data(),"GBR","United Kingdom"),WorldBankRuntime.GetCountry(Client.data(),"USA","United States")];
