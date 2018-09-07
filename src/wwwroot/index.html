@@ -2,12 +2,25 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <title>@sampleName@</title>
-        <link rel="stylesheet" href="Content/@sampleName@.css" />
-        <script src="Content/@sampleName@.head.js"></script>
+        <title>Data</title>
+        <link rel="stylesheet" href="Content/Data.css" />
+        <script src="Content/Data.head.js"></script>
     </head>
     <body>
-        <div id="main"></div>
-        <script src="Content/@sampleName@.js"></script>
+        <h1>Tertiary school enrollment and GDP per capita in the EU vs the US</h1>
+        <p>This workbook compares tertiary (college, university, etc.) school enrollment
+        and GDP per capita (USD) figures in various European Union countries and the United States.</p>
+        <p>Data shown is obtained real-time from the <a href="http://data.worldbank.org/">World Bank database</a>.</p>
+        <p>To add or refine these charts, you can edit the F# code in the primary tab.</p>
+
+        <h2>Countries shown in this workbook:</h2>
+        <div id="countries"></div>
+        <div id="tertiary-enrollment"></div>
+
+        <p>These figures largely correlate with GDP per capita figures in each country,
+        but interesting deviations can be observed in various years.
+        </p>
+        <div id="gdp-per-capita"></div>
+        <script src="Content/Data.js"></script>
     </body>
 </html>
